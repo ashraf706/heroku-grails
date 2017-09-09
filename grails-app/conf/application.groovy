@@ -1,5 +1,7 @@
 environments {
   production {
+    grails.resources.uri.prefix = '/content/'
+
     dataSource {
       dbCreate = "update"
       driverClassName = "org.postgresql.Driver"

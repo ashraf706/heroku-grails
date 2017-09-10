@@ -7,11 +7,11 @@
 
         <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.7.48/css/aui.min.css" media="all">
         <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.7.48/css/aui-experimental.min.css" media="all">
-        <link rel="stylesheet" href="styles/index.css" media="all">
 
         <script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
         <script src="//aui-cdn.atlassian.com/aui-adg/5.7.48/js/aui.min.js"></script>
         <script src="//aui-cdn.atlassian.com/aui-adg/5.7.48/js/aui-experimental.min.js"></script>
+
 
         %{--<asset:stylesheet href="aui/css/aui-all.css" media="all"/>
         <asset:stylesheet href="aui/css/aui-experimental.css" media="all"/>

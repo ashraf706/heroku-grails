@@ -7,37 +7,35 @@
 </head>
 
 <body>
-<div class="aui-tem" style="background: #fdfccb">
+<div>
     <table width="100%">
         <tbody>
         <tr>
             <td width="50%" ;>
-                <div class="bgimg" style="height: 300px;">
+                <div class="bgimg">
                     div with image
                 </div>
             </td>
             <td>
-                <div class="aui-message success">
-                    <p class="title">
-                        <span class="aui-icon icon-error"></span>
-                        <strong>Book your test now!</strong>
-                    </p>
+                    <div class="my-info-small payment-div" data-url="${createLink(controller: 'Candidate', action: 'create')}" >
+                        <p class="">
 
-                    <p>And this is just content in a Default message.</p>
-                </div>
+                            <strong>Book your test now!</strong>
+                        </p>
 
-                <div class="aui-message success">
-                    <p class="title">
-                        <span class="aui-icon icon-error"></span>
+                        <p>And this is just content in a Default message.</p>
+                    </div>
+
+                <div class="my-info-small">
+                    <p class="">
                         <strong>Driving Test Cancellations</strong>
                     </p>
 
                     <p>0208500 385Y,  0208500 385X</p>
                 </div>
 
-                <div class="aui-message success">
+                <div class="my-info-small">
                     <p class="title">
-                        <span class="aui-icon icon-error"></span>
                         <strong>Support</strong>
                     </p>
 
@@ -49,24 +47,29 @@
     </table>
 </div>
 
-<div class="aui-tem" ; style="background: red">
+<div class="" style="padding-top: 15px;">
     <table width="100%">
         <tbody>
         <tr>
             <td width="33%">
-                <div class="my-info">
+                <div class="my-info payment-div", data-url="${createLink(controller: 'Candidate', action: 'create')}">
                     <div><span class="my-span-large">Book Your Test Now</span></div>
-                    <div style="padding-top: 20px;"><span class="my-span-small">We Support</span></div>
-                    <div style="padding-top: 10px;">
-                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo">
 
-                    <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png" border="0" alt="PayPal Acceptance Mark">
+                    <div style="padding-top: 20px;"><span class="my-span-small">We Support</span></div>
+
+                    <div style="padding-top: 10px;">
+                        <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0"
+                             alt="PayPal Logo">
+
+                        <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/AM_mc_vs_ms_ae_UK.png" border="0"
+                             alt="PayPal Acceptance Mark">
+
                         <div>
 
-                </div>
+                        </div>
             </td>
             <td width="45%">
-                <div class="my-info">
+                <div class="my-info" style="height: 250px;">
                     <div><span class="aui-icon aui-icon-large aui-iconfont-search">Search</span>&nbsp;&nbsp;<span
                             class="my-span-icon">We rea always searching best option for you</span></div>
 
@@ -84,7 +87,7 @@
                 </div>
             </td>
             <td width="">
-                <div class="my-info-wit-background">
+                <div class="my-info-with-background">
 
                     hello world
                 </div>
@@ -93,6 +96,17 @@
         </tbody>
     </table>
 </div>
+
+<div style="width: 100%; background-color: #006dba ">&nbsp</div>
+<footer id="footer" role="contentinfo">
+    <section class="my-footer-body">
+        <ul id="aui-footer-list">
+            <li>Copyright © 2017-2018 Suitable Name</li>
+            %{--<div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>--}%
+    </section>
+</footer>
+
+<asset:javascript src="index.js"/>
 
 </body>
 </html>

@@ -3,7 +3,7 @@
     <head>
 
         <meta charset="utf-8">
-        <title>AUI - Getting started</title>
+        <title>Short Notice</title>
 
         <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.7.48/css/aui.min.css" media="all">
         <link rel="stylesheet" href="//aui-cdn.atlassian.com/aui-adg/5.7.48/css/aui-experimental.min.css" media="all">

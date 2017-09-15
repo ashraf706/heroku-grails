@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta name="layout" content="main" />
-        <g:set var="entityName" value="${message(code: 'candidate.label', default: 'Candidate')}" />
-        <title><g:message code="default.create.label" args="[entityName]" /></title>
-    </head>
-    <body>
-        <a href="#create-candidate" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
-        <div class="nav" role="navigation">
-            <ul>
-                <li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
-                <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
-            </ul>
-        </div>
-        <div id="create-candidate" class="content scaffold-create" role="main">
-            <h1><g:message code="default.create.label" args="[entityName]" /></h1>
-            <g:if test="${flash.message}">
-            <div class="message" role="status">${flash.message}</div>
-            </g:if>
-            <g:hasErrors bean="${this.candidate}">
-            <ul class="errors" role="alert">
-                <g:eachError bean="${this.candidate}" var="error">
-                <li <g:if test="${error in org.springframework.validation.FieldError}">data-field-id="${error.field}"</g:if>><g:message error="${error}"/></li>
-                </g:eachError>
-            </ul>
-            </g:hasErrors>
-            <g:form action="save">
-                <fieldset class="form">
-                    <f:all bean="candidate"/>
-                </fieldset>
-                <fieldset class="buttons">
-                    <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
-                </fieldset>
-            </g:form>
-        </div>
-    </body>
+<head>
+    <meta name="layout" content="main"/>
+</head>
+
+<body>
+<div id="create-candidate" class="content scaffold-create" role="main">
+%{--
+    <g:form action="save">
+        <fieldset class="form">
+            <f:all bean="candidate"/>
+        </fieldset>
+        <fieldset class="buttons">
+            <g:submitButton name="create" class="save"
+                            value="${message(code: 'default.button.create.label', default: 'Create')}"/>
+        </fieldset>
+    </g:form>--}%
+
+    <g:form class="aui" action="save">
+        <fieldset class="form">
+            <div class="field-group">
+                <label for="name">Name <span class="aui-icon icon-required">(required)</span></label>
+                <input class="text medium-field" type="text"
+                       id="name" name="name" placeholder="you@example.com">
+
+                <div class="description">Your Name</div>
+            </div>
+
+            <div class="field-group">
+                <label for="mobileNumber">Mobile Number <span class="aui-icon icon-required">(required)</span></label>
+                <input class="text medium-field" type="text"
+                       id="mobileNumber" name="mobileNumber" placeholder="07xxxx">
+
+                <div class="description">Your Name</div>
+            </div>
+
+
+
+            <div class="buttons-container">
+                <div class="buttons">
+                    <input class="button submit" type="submit" value="Save" id="comment-save-button">
+                    <a class="cancel" href="#">Cancel</a>
+                </div>
+            </div>
+        </fieldset>
+    </g:form>
+
+</div>
+</body>
 </html>
